@@ -1,0 +1,18 @@
+{
+  "name": "via_projekt2",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "mkdir src",
+    "compile": "lessc src/style.less > style.css",
+    "compile-watch": "less-watch-compiler ./src ./"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "less": "^4.2.0",
+    "less-watch-compiler": "^1.16.3"
+  }
+}

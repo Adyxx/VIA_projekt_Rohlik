@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- BS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    main {
+      margin-top: 150px;
+      /* Leave space for the navbar so content isn't hidden */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="navbar nav2html">
+      <!-- First Row: Logo, "Do 90 min", Search, Účet -->
+      <div class="nav-top-row">
+        <div class="left-menu">
+          <a href="index.html"><img class="navlogo" src="src/svg/rohlik-logo.svg" /></a>
+          <span><img src="src/svg/sh_fast.svg" alt="shipping-fast"> Doprava</span>
+        </div>
+
+        <div class="search-container">
+          <input type="text" class="form-control" placeholder="Hledat název, kategorii, nebo recept">
+          <button style="border-radius: 0px;" class="btn-primary"><b>HLEDAT</b></button>
+        </div>
+
+        <div class="account-container">
+          <button class="account-btn"><i class="fa fa-fw fa-user"></i> Účet</button>
+        </div>
+      </div>
+
+      <div class="nav2nd">
+        <button>Cenové trháky</button>
+        <button>Zachraň a ušetři</button>
+        <button>Záruka nejnižší ceny</button>
+        <button>Množstevní akce</button>
+        <button>Vánoce</button>
+        <button>Boží kraj, boží jídlo</button>
+        <button>Naše značky</button>
+        <button>ROSSMANN</button>
+        <button>Upcyklace</button>
+        <button>Klub Rohlíček</button>
+        <button>Novinky</button>
+        <button>Chef recepty</button>
+        <button>Úžasné dárky</button>
+        <button>Premium ceny</button>
+        <button>Manufaktura</button>
+        <button>Marks & Spencer</button>
+        <button>Bistro</button>
+        <button>Výprodej</button>
+        <button>Dárkové poukazy</button>
+        <button>ALNATURA</button>
+        <button>Otoč obal</button>
+
+        <!-- Dropdown Button -->
+        <div class="dropdown">
+          <button class="dropdown-btn">Zobrazit více</button>
+          <div class="dropdown-content">
+            <!-- Extra buttons will appear here -->
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="nav3rd">
+        <button>Ovoce a zelenina</button>
+        <button>Mléčné a chlazené</button>
+        <button>Maso a ryby</button>
+        <button>Pekárna a cukrárna</button>
+        <button>Uzeniny a lahůdky</button>
+        <button>Mražené</button>
+        <button>Plant based</button>
+        <button>Trvanlivé</button>
+        <button>Nápoje</button>
+        <button>Speciální výživa</button>
+        <button>Drogerie a kosmetika</button>
+        <button>Domácnost a zahrada</button>
+        <button>Dítě</button>
+        <button>Zvíře</button>
+        <button>Lékarna</button>
+      </div>
+
+      <!-- Fourth Row: Shopping cart label protruding on the right -->
+      <div class="cart-label">
+        <img src="src/svg/cart.svg" alt="shopping-cart"> 0,00 Kč
+      </div>
+    </div>
+  </header>
+
+
+
+
+  <main>
+    <div class="chat-button">
+      <button class="chat-icon"><i class="fa fa-comments"></i> Chat</button>
+    </div>
+
+    <div class="container">
+      <!-- Main row for primary promotions -->
+      <div class="row">
+
+        <!-- Left column with main promotion message -->
+        <div class="svathody col-sm-8">
+          <div class="content">
+            <h2><b>SVATOMARTINSKÉ HODY NA ROHLÍKU</b></h2>
+            <p>ZAPOMEŇTE NA FRONTY, ČERSTVOST MÁTE NA DOSAH</p>
+            <button>Ochutnejte ten rozdíl</button>
+          </div>
+        </div>
+
+        <!-- Right column with secondary promotion messages -->
+        <div class="col-sm-4 rside">
+          <!-- First promotion message -->
+          <div class="slev">
+            <h2><b>SLEVY AŽ 50%</b></h2>
+            <p>NOVÁ VÁRKA CENOVÝCH TRHÁKŮ JE TADY</p>
+            <button>Nakoupím výhodně!</button>
+          </div>
+          <div>
+            <p></p>
+          </div>
+          <!-- Second promotion message -->
+          <div class="podzbab">
+            <h2><b>LISTOPADOVÉ NOVINKY</b></h2>
+            <p>LAHODNÉ ROHLÍK BRISTRO, POPSTAR ZERO NEBO SLADKÉ MERCI?</p>
+            <button>Vyzkouším!</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Second container for three promotional cards -->
+    <div class="container">
+      <div class="row">
+
+        <!-- First card with embedded video -->
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="src/img2/1727777278576.avif" alt="Water Conservation">
+            <p>Knorr bohatý bujón <br> Mega dochutí tvojí rychlou pánev</p>
+          </div>
+        </div>
+
+        <!-- Second card with image -->
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="src/img2/1729489659760.avif" alt="Water Conservation">
+            <p>Začíná to u nás<br>Vraťte s námi vodu do Jizerek</p>
+          </div>
+        </div>
+
+        <!-- Third card with image -->
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="src/img2/1731264254464.avif" alt="Comfort for the Little Ones">
+            <p> Prací prostředky Ariel <br> Odstraní i 7 dní zaschlé skvrny</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sectionlabel container">
+      <h5><b>Cenové trháky týdne</b></h5>
+      <a href="">Zobrazit více ></a>
+    </div>
+
+
+    <div id="carouselExampleControls" class="container carousel slide">
+      <div class="carousel-inner">
+
+        <!-- First slide with 6 images -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-between">
+
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/maliny.avif" alt="First item" class="d-block w-100">
+              <p>42.90 Kč <br> -38 % do 17. 11. <br> Maliny čerstvé, vanička <br> 125 g (343.2 Kč/kg)</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/0 (1).avif" alt="Second item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/0 (2).avif" alt="Third item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/0 (3).avif" alt="Fourth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/0 (4).avif" alt="Fifth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/0 (5).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/0 (6).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional slides with 6 images each -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-between">
+            <!-- Repeat similar structure with six images -->
+            <!-- Image and content for each of the next 6 items goes here -->
+
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/0 (4).avif" alt="First item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/0 (5).avif" alt="Second item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/0 (6).avif" alt="Third item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/1407516-1716284558675.avif" alt="Fourth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/0 (7).avif" alt="Fifth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/0 (8).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/0 (9).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel controls -->
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="sectionlabel container">
+      <h5><b>Mléčné a chlazené</b></h5>
+      <a href="">Zobrazit více ></a>
+    </div>
+
+    <div id="carouselExampleControls2" class="container carousel slide">
+      <div class="carousel-inner">
+
+        <!-- First slide with 6 images -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-between">
+
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/1 (1).avif" alt="First item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/1 (2).avif" alt="Second item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/1 (3).avif" alt="Third item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/1 (4).avif" alt="Fourth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/1 (5).avif" alt="Fifth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/1 (6).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+        
+        <div class="carousel-item">
+          <div class="d-flex justify-content-between">
+            
+            
+
+            <div class="carousel-image-item">
+              <img src="src/img/CZ_2.jpg" alt="First item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img/CZ_2.jpg" alt="Second item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img/CZ_2.jpg" alt="Third item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img/CZ_2.jpg" alt="Fourth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img/CZ_2.jpg" alt="Fifth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img/CZ_2.jpg" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      
+      <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+ -->
+
+
+
+
+
+
+
+
+    <div class="sectionlabel container">
+      <h5><b>Ovoce a zelenina</b></h5>
+      <a href="">Zobrazit více ></a>
+    </div>
+
+    <div id="carouselExampleControls3" class="container carousel slide">
+      <div class="carousel-inner">
+
+        <!-- First slide with 6 images -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-between">
+
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/2 (1).avif" alt="First item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/2 (2).avif" alt="Second item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/2 (3).avif" alt="Third item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/2 (4).avif" alt="Fourth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/2 (5).avif" alt="Fifth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/2 (6).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/2 (7).avif" alt="seventh item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional slides with 6 images each -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-between">
+            <!-- Repeat similar structure with six images -->
+            <!-- Image and content for each of the next 6 items goes here -->
+
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/2 (3).avif" alt="First item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/2 (4).avif" alt="Second item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/2 (5).avif" alt="Third item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/2 (6).avif" alt="Fourth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/2 (7).avif" alt="Fifth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/2 (8).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/2 (9).avif" alt="Seventh item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel controls -->
+      <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="sectionlabel container">
+
+
+      <h5><b>Trvanlivé</b></h5>
+      <a href="">Zobrazit více ></a>
+    </div>
+    <div id="carouselExampleControls4" class="container carousel slide">
+      <div class="carousel-inner">
+
+        <!-- First slide with 6 images -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-between">
+
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/3 (1).avif" alt="First item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/3 (2).avif" alt="Second item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/3 (3).avif" alt="Third item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/3 (4).avif" alt="Fourth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/3 (5).avif" alt="Fifth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/3 (6).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/3 (7).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional slides with 6 images each -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-between">
+            <!-- Repeat similar structure with six images -->
+            <!-- Image and content for each of the next 6 items goes here -->
+
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/3 (6).avif" alt="First item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/3 (7).avif" alt="Second item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/3 (8).avif" alt="Third item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/3 (9).avif" alt="Fourth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/3 (10).avif" alt="Fifth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/3 (11).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/3 (12).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel controls -->
+      <a class="carousel-control-prev" href="#carouselExampleControls4" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls4" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="container appinfo" style="text-align: center;">
+      <h4><b>Nakupte přes naši apku - Rychleji a snadněji</b></h4>
+      <p>Vyfoťte telefonem QR kód a aplikaci si jednoduše nainstalujete</p>
+    </div>
+
+
+
+
+
+
+    <div class="sectionlabel container">
+
+      <h5><b>Pekárna a cukrárna</b></h5>
+      <a href="">Zobrazit více ></a>
+    </div>
+    <div id="carouselExampleControls5" class="container carousel slide">
+      <div class="carousel-inner">
+
+        <!-- First slide with 6 images -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-between">
+
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/4 (1).avif" alt="First item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/4 (2).avif" alt="Second item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/4 (3).avif" alt="Third item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/4 (4).avif" alt="Fourth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <!-- 
+              <div class="carousel-image-item">
+                <img src="src/img_sortiment/4 (5).avif" alt="Fifth item" class="d-block w-100">
+                <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+              </div>
+              <div class="carousel-image-item">
+                <img src="src/img_sortiment/4 (6).avif" alt="Sixth item" class="d-block w-100">
+                <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+              </div>
+              <div class="carousel-image-item">
+                <img src="src/img_sortiment/4 (4).avif" alt="Sixth item" class="d-block w-100">
+                <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+              </div>
+                -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+          <div class="carousel-item">
+            <div class="d-flex justify-content-between">
+            
+
+              <div class="carousel-image-item">
+                <img src="src/img/CZ_2.jpg" alt="First item" class="d-block w-100">
+                <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+              </div>
+              <div class="carousel-image-item">
+                <img src="src/img/CZ_2.jpg" alt="Second item" class="d-block w-100">
+                <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+              </div>
+              <div class="carousel-image-item">
+                <img src="src/img/CZ_2.jpg" alt="Third item" class="d-block w-100">
+                <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+              </div>
+              <div class="carousel-image-item">
+                <img src="src/img/CZ_2.jpg" alt="Fourth item" class="d-block w-100">
+                <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+              </div>
+              <div class="carousel-image-item">
+                <img src="src/img/CZ_2.jpg" alt="Fifth item" class="d-block w-100">
+                <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+              </div>
+              <div class="carousel-image-item">
+                <img src="src/img/CZ_2.jpg" alt="Sixth item" class="d-block w-100">
+                <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        
+        <a class="carousel-control-prev" href="#carouselExampleControls5" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls5" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    -->
+
+
+
+
+    <div class="sectionlabel container">
+      <h5><b>Uzeniny a lahůdky</b></h5>
+      <a href="">Zobrazit více ></a>
+    </div>
+
+    <div id="carouselExampleControls6" class="container carousel slide">
+      <div class="carousel-inner">
+
+        <!-- First slide with 6 images -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-between">
+
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/5 (1).avif" alt="First item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/5 (2).avif" alt="Second item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/5 (3).avif" alt="Third item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/5 (4).avif" alt="Fourth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/5 (5).avif" alt="Fifth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/5 (6).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/5 (7).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Additional slides with 6 images each -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-between">
+            <!-- Repeat similar structure with six images -->
+            <!-- Image and content for each of the next 6 items goes here -->
+
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/5 (2).avif" alt="First item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/5 (3).avif" alt="Second item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/5 (4).avif" alt="Third item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/5 (5).avif" alt="Fourth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/5 (6).avif" alt="Fifth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/5 (7).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/5 (8).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel controls -->
+      <a class="carousel-control-prev" href="#carouselExampleControls6" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls6" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+
+
+    <div class="sectionlabel container">
+      <h5><b>Nápoje</b></h5>
+      <a href="">Zobrazit více ></a>
+    </div>
+    <div id="carouselExampleControls7" class="container carousel slide">
+      <div class="carousel-inner">
+
+        <!-- First slide with 6 images -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-between">
+
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/6 (1).avif" alt="First item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/6 (2).avif" alt="Second item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/6 (3).avif" alt="Third item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/6 (4).avif" alt="Fourth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/6 (5).avif" alt="Fifth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/6 (6).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/6 (7).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Additional slides with 6 images each -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-between">
+            <!-- Repeat similar structure with six images -->
+            <!-- Image and content for each of the next 6 items goes here -->
+
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/6 (2).avif" alt="First item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/6 (3).avif" alt="Second item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/6 (5).avif" alt="Third item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/6 (6).avif" alt="Fourth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/6 (7).avif" alt="Fifth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/6 (8).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+            <div class="carousel-image-item">
+              <img src="src/img_sortiment/6 (9).avif" alt="Sixth item" class="d-block w-100">
+              <p>1990 Kč<br>29,90 Kč<br>-33 % do 9. 11.<br>LE&CO Výroční šunka nejvyšší jakosti 95 %<br>100 g</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel controls -->
+      <a class="carousel-control-prev" href="#carouselExampleControls7" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls7" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+
+
+
+    <div class=" container center">
+      <h4>Inspirace na vaření</h4>
+      <div class="tabs">
+        <a href="#" class="tab active" data-tab="doporu">Doporučené pro vás</a>
+        <a href="#" class="tab" data-tab="oblibene">Oblíbené</a>
+        <a href="#" class="tab" data-tab="nove">Nové recepty</a>
+      </div>
+
+      <div id="doporu" class="tab-content active">
+        <!-- ROW 1 -->
+        <div class="roww">
+          <div><img src="src/img/CZ_1.jpg" alt=""><a>Tomato sauce with beef</a></div>
+          <div><img src="src/img/CZ_1.jpg" alt=""><a>Spaghetti Carbonara</a></div>
+          <div><img src="src/img/CZ_1.jpg" alt=""><a>Chicken Tikka Masala</a></div>
+          <div><img src="src/img/CZ_1.jpg" alt=""><a>Vegetable Stir-fry</a></div>
+          <div><img src="src/img/CZ_1.jpg" alt=""><a>Grilled Salmon</a></div>
+          <div><img src="src/img/CZ_1.jpg" alt=""><a>BBQ Ribs</a></div>
+          <div><img src="src/img/CZ_1.jpg" alt=""><a>Caesar Salad</a></div>
+          <div><img src="src/img/CZ_1.jpg" alt=""><a>Mushroom Risotto</a></div>
+        </div>
+        <!-- ROW 2 -->
+        <div class="roww">
+          <div><img src="src/img/CZ_1.jpg" alt=""><a>Beef Stew</a></div>
+          <div><img src="src/img/CZ_1.jpg" alt=""><a>Shrimp Scampi</a></div>
+          <div><img src="src/img/CZ_1.jpg" alt=""><a>Thai Green Curry</a></div>
+          <div><img src="src/img/CZ_1.jpg" alt=""><a>Lasagna</a></div>
+          <div><img src="src/img/CZ_1.jpg" alt=""><a>Pulled Pork Sandwich</a></div>
+          <div><img src="src/img/CZ_1.jpg" alt=""><a>Stuffed Peppers</a></div>
+          <div><img src="src/img/CZ_1.jpg" alt=""><a>Eggplant Parmesan</a></div>
+          <div><img src="src/img/CZ_1.jpg" alt=""><a>Falafel</a></div>
+        </div>
+      </div>
+
+      <div id="oblibene" class="tab-content">
+        <p>Zde najdete recepty, ze kterých nakoupíte nebo které si označíte srdíčkem</p>
+      </div>
+
+      <div id="nove" class="tab-content">
+        <!-- ROW 1 -->
+        <div class="roww">
+          <div><img src="path/to/image1.jpg" alt=""><a>Roasted Chicken</a></div>
+          <div><img src="path/to/image2.jpg" alt=""><a>Beef Wellington</a></div>
+          <div><img src="path/to/image3.jpg" alt=""><a>Spring Rolls</a></div>
+          <div><img src="path/to/image4.jpg" alt=""><a>Vegetable Soup</a></div>
+          <div><img src="path/to/image5.jpg" alt=""><a>Pizza Margherita</a></div>
+          <div><img src="path/to/image6.jpg" alt=""><a>Chocolate Cake</a></div>
+          <div><img src="path/to/image7.jpg" alt=""><a>Grilled Shrimp</a></div>
+          <div><img src="path/to/image8.jpg" alt=""><a>Pancakes</a></div>
+        </div>
+        <!-- ROW 2 -->
+        <div class="roww">
+          <div><img src="path/to/image9.jpg" alt=""><a>Clam Chowder</a></div>
+          <div><img src="path/to/image10.jpg" alt=""><a>Tofu Stir-fry</a></div>
+        </div>
+      </div>
+      <button>Další recepty najdete v sekci 🍽 Rohlik Chef</button>
+    </div>
+
+
+
+
+
+
+
+    <div class="sectionlabel container">
+      <h5><b>Objevte zajímavý sortiment</b></h5>
+    </div>
+
+    <div class="container row">
+      <div class="col-sm-3">
+        <h5> Nejlepší řeznictví </h5>
+        <p>ve vašem městě</p>
+        <a href="">VÍCE INFO</a>
+      </div>
+
+      <div class="col-sm-3">
+        <h5> Nejlepší pekárna</h5>
+        <p>ve vašem městě</p>
+        <a href="">VÍCE INFO</a>
+      </div>
+
+
+      <div class="col-sm-3">
+        <h5>Marks & Spencer</h5>
+        <p>Prozkoumejte nabídku na Rohlíku</p>
+        <a href="">VÍCE INFO</a>
+      </div>
+      <div class="col-sm-3">
+
+        <h5>Otoč obal</h5>
+        <p>Vratné obaly, co myslí eko</p>
+        <a href="">VÍCE INFO</a>
+      </div>
+    </div>
+
+
+    <div class="sectionlabel container">
+      <h5><b>Zákaznické kluby</b></h5>
+    </div>
+
+
+    <div class="container row">
+      <div class="col-sm-4">
+        <h5>Rohlík premium</h5>
+        <p>Doprava zdarma, garance závozu do 5 hodin od objednání a další výhody.</p>
+
+      </div>
+      <div class="col-sm-4">
+        <h5>Rohlík bez bariér</h5>
+        <p>Klub plný výhod pro starší 65 let nebo držitele ZTP</p>
+      </div>
+      <div class="col-sm-4">
+
+        <h5>Rohlíček</h5>
+        <p>Doprava zdarma pro rodiče s malými dětmi. Ušetřete až 5 000 Kč ročně.</p>
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <footer>
+
+    <div class="footer_1">
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="src/svg/phone.svg" alt="">
+            </div>
+            <div class="col-sm-9">
+              <h6>800 730 740</h6>
+              <p>Jsme pro vás dostupní každý den od 7:00 do 23:00</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="src/svg/whatsapp.svg" alt="">
+            </div>
+            <div class="col-sm-9">
+              <h6>WhatsAppChat</h6>
+              <p>kontaktovat nás můžete také přes WhatsApp na čísle 771 231 771</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="src/svg/mail.svg" alt="">
+            </div>
+            <div class="col-sm-9">
+              <h6>Minimální výše objednávky</h6>
+              <p>Nákup vám dovezeme již od 749 kč při objednání na konkrtétní adresu a od 500 Kč při
+                doručení do úložné schránky - Rohlík Pointu</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="src/svg/mail.svg" alt="">
+            </div>
+            <div class="col-sm-9">
+              <h6>Rohlík Ads</h6>
+              <p>Ukažte se tam, kde naši zákazníci rádi nakupují!</p>
+            </div>
+          </div>
+        </div>
+        <div class="contacts col-sm-6">
+          <div class="row">
+            <div class=" col-sm-3">
+              <img src="src/svg/mail.svg" alt="">
+            </div>
+            <div class="col-sm-9">
+              <h6>zakaznici@rohlik.cz</h6>
+              <p>JPokud potřebujete pomoci obratem, prosíme využijte telefon nebo chat</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="src/svg/mail.svg" alt="">
+            </div>
+            <div class="col-sm-9">
+              <h6>Vyřešte to online</h6>
+              <p>Ať už chcete reklamovat zboží nebo třeba nesedí počet vratných tašek, Vyřešte to hravě za
+                chviličku. <a href="">Stačí kliknout sem</a>.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="src/svg/mail.svg" alt="">
+            </div>
+            <div class="col-sm-9">
+              <h6>Dodavatelé</h6>
+              <p>Pokud se chcete stát naším dodavatelem, klikněte na <a href="">odkaz</a>, kde se dozvíte
+                veškeré potřebné informace.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="src/svg/mail.svg" alt="">
+            </div>
+            <div class="col-sm-9">
+              <h6>Rohlík Insights</h6>
+              <p>Zaostřete na zákazníky pomocí našeho nástroje</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="centered-container">
+      <div class="row">
+        <div class="col-sm-4">
+          <p><b>Šetřete s Rohlíkem</b></p>
+          <a href="">Rohlík Premium</a>
+          <a href="">Dětský klub Rohlíček</a>
+          <a href="">Rohlík bez bariér</a>
+        </div>
+        <div class="col-sm-4">
+          <p><b>Snadný nákup</b></p>
+          <a href="">Rohlík do kanclu</a>
+          <a href="">Rohlík Pointy</a>
+          <a href="">Dárkový poukaz</a>
+          <a href="">Uplatnit kredity a poukazy</a>
+        </div>
+        <div class="col-sm-4">
+          <p><b>O nás</b></p>
+          <a href="">Doprava a mapa rozvozu</a>
+          <a href="">Kontakt</a>
+          <a href="">Pro média</a>
+          <a href="">Volná místa</a>
+          <a href="">Rohlík pomáhá farmářům!</a>
+          <a href="">Dluhopisy</a>
+          <a href="">Časté dotazy</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="centered-container">
+      <div class="row">
+        <div class="col-sm-4">
+          <p><b>Dokumenty</b></p>
+          <a href="">Všeobecné obchodní podmínky</a>
+          <a href="">Podmínky užití služby Premium</a>
+          <a href="">Podmínky Premium od Partners Banky</a>
+          <a href="">Podmínky klubu Rohlíček</a>
+          <a href="">Zásady klubu Rohlíček</a>
+          <a href="">Zásady ochrany osobních údajů</a>
+          <a href="">Podmínky použití Vratné tašky</a>
+          <a href="">Cookies</a>
+          <a href="">Reklamační řád</a>
+        </div>
+        <div class="col-sm-4">
+          <p><b>Rohlík do mobilu</b></p>
+          <a href="">iOS aplikace</a>
+          <a href="">Android aplikace</a>
+        </div>
+        <div class="col-sm-4">
+          <p><b>Sledujte nás</b></p>
+          <div class="row">
+            <!-- Social media icons here -->
+          </div>
+        </div>
+      </div>
+
+      <p>Alkohol a tabákové výrobky prodáváme pouze osobám starším 18 let. Při převzetí zboží bude ověřen váš věk.
+        Pro nastavení souborů cookies klikněte sem.</p>
+    </div>
+
+    <div class="button-row row">
+      <button class="lang-btnf"> <!-- CZ logo --> česky</button>
+      <button class="lang-btnf"> <!-- EN logo --> Switch to English</button>
+    </div>
+
+
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        .form-group span {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Order Form</h1>
+    <form id="order-form" action="#" method="POST" onsubmit="return validateForm()">
+        <div class="form-group">
+            <label for="first-name">Jméno</label>
+            <input type="text" id="first-name" name="first_name" required placeholder="Enter your first name">
+            <span id="first-name-error" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label for="last-name">Příjmení</label>
+            <input type="text" id="last-name" name="last_name" required placeholder="Enter your last name">
+            <span id="last-name-error" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label for="address">Dodací adresa</label>
+            <input type="text" id="address" name="address" required placeholder="Enter your shipping address">
+            <span id="address-error" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label for="city">Město</label>
+            <input type="text" id="city" name="city" required placeholder="Enter your city">
+            <span id="city-error" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label for="zip-code">ZIP</label>
+            <input type="text" id="zip-code" name="zip_code" required placeholder="Enter your ZIP code">
+            <span id="zip-code-error" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label for="country">Země</label>
+            <select id="country" name="country" required>
+                <option value="">Vyber svou zemi</option>
+                <option value="usa">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Czech Republic</option>
+                <option value="germany">Germany</option>
+            </select>
+            <span id="country-error" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Emailová adresa</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            <span id="email-error" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label for="phone">Telefonní číslo</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            <span id="phone-error" class="error"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="product">Vyber si produkt</label>
+            <select id="product" name="product" required>
+                <option value="">Vyber si produkt</option>
+                <option value="laptop">Rohlík</option>
+                <option value="phone">Knedlík</option>
+                <option value="tablet">Máslo</option>
+                <option value="headphones">Čočková polévka</option>
+            </select>
+            <span id="product-error" class="error"></span>
+        </div>
+        <div class="form-group">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="100" required value="1">
+            <span id="quantity-error" class="error"></span>
+        </div>
+
+
+        <div class="form-group">
+            <label for="payment-method">Metoda zaplacení</label><br>
+            <input type="radio" id="credit-card" name="payment_method" value="credit_card" required>
+            <label for="credit-card">Credit Card</label><br>
+            <input type="radio" id="paypal" name="payment_method" value="paypal">
+            <label for="paypal">PayPal</label><br>
+            <input type="radio" id="bank-transfer" name="payment_method" value="bank_transfer">
+            <label for="bank-transfer">Bank Transfer</label>
+            <span id="payment-method-error" class="error"></span>
+        </div>
+
+
+        <div class="form-group">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label><br>
+            <span id="terms-error" class="error"></span>
+        </div>
+        <div class="form-group">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Subscribe to our newsletter</label><br>
+        </div>
+
+
+        <div class="form-group">
+            <label for="notes">Order Notes (optional)</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Any additional information or special requests"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="order-date">Order Date</label>
+            <input type="date" id="order-date" name="order_date" required>
+            <span id="order-date-error" class="error"></span>
+        </div>
+
+
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Place Order</button>
+        </div>
+    </form>
+</div>
+
+<script>
+    function validateForm() {
+        let isValid = true;
+        
+        const errorElements = document.querySelectorAll('.error');
+        errorElements.forEach(function(el) {
+            el.textContent = '';
+        });
+
+        const zipCode = document.getElementById('zip-code').value;
+        const zipCodePattern = /^\d{5}$/;
+        if (!zipCodePattern.test(zipCode)) {
+            document.getElementById('zip-code-error').textContent = 'Please enter a valid 5-digit ZIP code.';
+            isValid = false;
+        }
+
+        const email = document.getElementById('email').value;
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailPattern.test(email)) {
+            document.getElementById('email-error').textContent = 'Please enter a valid email address.';
+            isValid = false;
+        }
+
+        const phone = document.getElementById('phone').value;
+        const phonePattern = /^[0-9]{9}$/;
+        if (!phonePattern.test(phone)) {
+            document.getElementById('phone-error').textContent = 'Please enter a valid phone number (9 digits).';
+            isValid = false;
+        }
+
+        const paymentMethods = document.getElementsByName('payment_method');
+        let paymentSelected = false;
+        paymentMethods.forEach(function(method) {
+            if (method.checked) paymentSelected = true;
+        });
+        if (!paymentSelected) {
+            document.getElementById('payment-method-error').textContent = 'Please select a payment method.';
+            isValid = false;
+        }
+
+        const terms = document.getElementById('terms');
+        if (!terms.checked) {
+            document.getElementById('terms-error').textContent = 'You must agree to the terms and conditions.';
+            isValid = false;
+        }
+
+        return isValid;
+    }
+</script>
+
+</body>
+</html>
